@@ -1,106 +1,196 @@
-
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Beyond Data Passions</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+  <title>Evolving | Kriti C Parikh</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 200px;
+      perspective: 1000px;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ddd;
+      padding: 1rem;
+    }
+    .flip-card-front {
+      background-color: #f7f7f7;
+      color: black;
+    }
+    .flip-card-back {
+      background-color: #333;
+      color: white;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+    <nav id="nav">
+      <ul class="links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="roadmap.html">Journey</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#research-papers">Research</a></li>
+        <li><a href="interests.html">Beyond Data</a></li>
+        <li class="active"><a href="evolve.html">Evolving</a></li>
+      </ul>
+    </nav>
+	<ul class="icons">
+        <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://github.com/KritiCParikh" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://discordapp.com/users/kcparikh" target="_blank" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    </ul>
+	</nav>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="interests.html" class="logo">Data-driven mind with a heart for varied passions</a>
-					</header>
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h1>Evolving</h1>
+          <p>A living log of growth, inspiration, and curiosity</p>
+        </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-						<li class="active"><a href="index.html">About Me</a></li>
-						<li class="active"><a href="roadmap.html">Journey</a></li>
-                            			<li class="active"><a href="index.html#projects">Projects</a></li>
-			                        <li class="active"><a href="index.html#skills">Skills</a></li>
-			                        <li class="active"><a href="index.html#research-papers">Research</a></li>
-                            			<li class="active"><a href="interests.html">Beyond Data</a></li>
-						<li class="active"><a href="evolve.html">Evolving</a></li>
-						</ul>
-						<ul class="icons">
-                            <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="https://github.com/KritiCParikh" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                            <li><a href="https://discordapp.com/users/kcparikh" target="_blank" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+        <h2>In My Queue</h2>
+        <div class="box">
+          <p><strong>Python</strong></p>
+          <progress value="70" max="100"></progress> 70%<br>
+          <p><strong>LangChain</strong></p>
+          <progress value="25" max="100"></progress> 25%<br>
+          <p><strong>LLMOps</strong></p>
+          <progress value="10" max="100"></progress> 10%
+        </div>
 
-                        </ul>
-					</nav>
+        <h2>Blog Posts / Articles</h2>
+        <div class="box">
+          <ul>
+            <li><a href="#">How I Built FitFusion AI in 5 Hours</a> – LinkedIn</li>
+          </ul>
+        </div>
 
-                    <!-- Main -->
-					<div id="main">
+        <h2>LinkedIn Pulse</h2>
+        <div class="box">
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">Google - Build With AI NYC event</p>
+            <a href="https://www.linkedin.com/posts/kriti-c-parikh_buildwithai-googlecloud-gcp-activity-7308113778477346816-Yfhh?utm_source=share&utm_medium=member_desktop&rcm=ACoAADGv7IQBvUws-dvy7fR_QU6owXBXdlm5DgQ">View on LinkedIn</a>
+            <a href="https://www.linkedin.com/posts/kriti-c-parikh_ai-datacloud-snowflake-activity-7305440697069772801-CXVJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADGv7IQBvUws-dvy7fR_QU6owXBXdlm5DgQ>View on LinkedIn</a>
+          </blockquote>
+        </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-							
-									<p> In addition to my fervor for analytics and data science, my life is infused with a deep passion for sports, particularly tennis, and the exhilarating world of automobiles and motorbikes. On the tennis court, I discover a canvas for self-expression and discipline. Being a dedicated member of the University's tennis team, I thrive in the dynamic interplay of strategy, skill, and teamwork. The relentless pursuit of excellence in every match mirrors my commitment to continuous improvement and performance in every aspect of life.
-<br> <br>
-                                        Beyond the tennis court, the world of automobiles ignites my curiosity and excitement. Exploring the intricate design, engineering marvels, and the sheer thrill of the open road fuels my fascination. Whether it's the purr of a finely tuned engine, the sleek lines of a sports car, or the exhilaration of riding a motorbike, each aspect tells a story of innovation and craftsmanship. This multi-faceted passion adds a dynamic layer to my interests, offering a unique balance between the precision of data analytics and the adrenaline of sports and automobiles 
-                                        <br> <br>
+        <h2>Idea Garden</h2>
+        <div class="box">
+          <div class="row gtr-50 gtr-uniform">
+            <div class="col-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <strong>AI Career Tracker</strong>
+                  </div>
+                  <div class="flip-card-back">
+                    Dashboard tracking resume views, application status, interview rounds.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <strong>DreamBinder</strong>
+                  </div>
+                  <div class="flip-card-back">
+                    A dream-to-image interactive story generator using Hugging Face + SDXL.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <strong>LinkedIn Mind Mapper</strong>
+                  </div>
+                  <div class="flip-card-back">
+                    Visually organize your LinkedIn post pipeline and engagement ideas.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                                        Hitting the gym is another outlet for my energy and determination, where I push my limits and build both physical and mental strength. This commitment to fitness complements my enthusiasm for sports and serves as a foundation for a balanced, healthy lifestyle.
+        <h2>Event Highlights ✨</h2>
+        <div class="box alt">
+          <div class="row gtr-50 gtr-uniform">
+            <div class="col-4"><span class="image fit"><img src="images_events/1.jpg" alt="Google Event badge" /></span></div>
+            <div class="col-4"><span class="image fit"><img src="images_events/2.jpg" alt="Snowflake Event badge" /></span></div>
+          </div>
+          <!-- <p>Attended Hugging Face NYC Meetup – Explored Transformers and GenAI use cases. Loved the swag!</p> -->
+        </div>
 
-                                        <br> <br>
-Finally, my deep connection with animals brings a compassionate side to my personality. Whether spending time with pets or supporting animal welfare, this passion adds a nurturing and empathetic dimension to my life. Together, these diverse interests create a well-rounded and driven individual, constantly seeking growth and improvement in all pursuits.
-                                    </p>
-								</header>
-								<a href="#" class="image main"><img src="images/image7.jpg" alt="" /></a>
-								</ul>
-							</article>
+        <h2>Whiteboard Brainstorms</h2>
+<div class="box">
+  <iframe src="https://docs.google.com/forms/d/e/https://forms.gle/bEH8Ec18nudV5AFQ8/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+        </div>
 
-                            <ul class="actions">
-								<li><a href="#nav" class="button icon solid solo fa-arrow-up scrolly">Go up</a></li>
-							</ul>
+        <h2>Personal Knowledge Hub</h2>
+        <div class="box">
+          <blockquote>
+            “In the middle of difficulty lies opportunity.” – Albert Einstein
+          </blockquote>
+          <!-- <p><strong>Current inspiration:</strong> LangChain + Gradio + Hugging Face Collabs</p> -->
+        </div>
 
+      </section>
+    </div>
 
-
-						<!-- Footer -->
-                        <footer id="footer">
-                            <section>
-                                    <h2> Let's Connect<br> and <br> Collaborate</h2>
-                            </section>
-    
-                            <section class="split contact">
-                                <section class="alt">
-                                    <h3>Address</h3>
-                                    <p>New York City, New York </p>
-                                </section>
-                            
-                                <section>
-                                    <h3>Email</h3>
-                                    <p><a href="mailto:kriticparikh@gmail.com">kriticparikh@gmail.com</a></p>
-                                </section>
-                                <section>
-                                    <h3>Social</h3>
-                                    <ul class="icons alt">
-                                        <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                        <li><a href="https://github.com/KritiCParikh" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                                        <li><a href="https://discordapp.com/users/kcparikh" target="_blank" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
-                                    </ul>
-                                </section>
-                            </section>
-                        </footer>
-
-    <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-
+    <footer id="footer">
+      <section>
+        <h2>Let's Connect and Collaborate</h2>
+      </section>
+      <section class="split contact">
+        <section class="alt">
+          <h3>Address</h3>
+          <p>New York City, New York</p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:kriticparikh@gmail.com">kriticparikh@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+            <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/KritiCParikh" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="https://discordapp.com/users/kcparikh" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+  </div>
 </body>
 </html>
+
+
+
