@@ -1,8 +1,7 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Evolving</title>
+  <title>Kriti C Parikh | Evolving</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -19,11 +18,12 @@
       width: 100%;
       height: 100%;
       text-align: center;
-      transition: transform 0.6s;
+      transition: transform 0.6s, box-shadow 0.3s;
       transform-style: preserve-3d;
     }
     .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     }
     .flip-card-front, .flip-card-back {
       position: absolute;
@@ -43,183 +43,160 @@
       transform: rotateY(180deg);
       overflow-y: auto;
     }
-    @media screen and (max-width: 736px) {
-      .row.gtr-50.gtr-uniform > .col-6 {
-        width: 100% !important;
+    .flip-card-front img {
+      animation: fadeIn 0.8s ease-in-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
       }
+    }
+    .box ul {
+      padding-left: 1.25em;
+    }
+    .box ul li {
+      list-style: disc;
+      margin: 0.5em 0;
+      font-size: 1rem;
     }
   </style>
 </head>
+
 <body class="is-preload">
-
-<!-- Wrapper -->
-<div id="wrapper">
-
-  <!-- Header -->
-  <header id="header">
-    <a href="evolve.html" class="logo">Evolve, Explore, Connect & Events </a>
-  </header>
-
-  <!-- Nav -->
-  <nav id="nav">
-    <ul class="links">
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="roadmap.html">Journey</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="index.html#skills">Skills</a></li>
-      <li><a href="index.html#research-papers">Research</a></li>
-      <li><a href="interests.html">Beyond Data</a></li>
-      <li class="active"><a href="evolve.html">Evolving</a></li>
-    </ul>
-    <ul class="icons">
-      <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-      <li><a href="https://github.com/KritiCParikh" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-      <li><a href="https://discordapp.com/users/kcparikh" target="_blank" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
-    </ul>
-  </nav>
-
-  <!-- Main -->
-  <div id="main">
-    <section class="post">
-      <header class="major">
-<!--         <h1>Evolving</h1>
-        <p>A living log of growth, inspiration, and curiosity</p>
-      </header> -->
-
-  <section id="queue">
-    <header>
-      <h2>In My Queue</h2>
+  <div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+      <a href="evolve.html" class="logo">Evolve, Explore, Connect & Events</a>
     </header>
-      <div class="queue-box">
-        <ul>
-          <li>LangChain for Developers</li>
-          <li>LLMOps Specialization</li>
-          <li>Advanced Prompt Engineering</li>
-          <li>Python for GenAI Applications</li>
-        </ul>
-      </div>
-  </section>
 
-      <h2>Blog Posts / Articles</h2>
-      <div class="box">
-        <ul>
-          <li><a href="#">How I Built FitFusion AI in 5 Hours</a> – LinkedIn</li>
-        </ul>
-      </div>
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="roadmap.html">Journey</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#research-papers">Research</a></li>
+        <li><a href="interests.html">Beyond Data</a></li>
+        <li class="active"><a href="evolve.html">Evolving</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://github.com/KritiCParikh" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="https://discordapp.com/users/kcparikh" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+      </ul>
+    </nav>
 
-      <h2>LinkedIn Pulse</h2>
-      <div class="box">
-        <div class="row gtr-50 gtr-uniform">
-          <div class="col-6">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="images_events/1.jpg" alt="Google AI Event" style="width:100%; height:100%; object-fit: cover;" />
-                </div>
-                <div class="flip-card-back">
-                  <p><strong>Google Build With AI NYC</strong><br>
-                    Explored multi-agent systems, Vertex AI apps, and built an AI teaching assistant alongside Googlers.
-                  </p>
-                  <a href="https://www.linkedin.com/posts/kriti-c-parikh_buildwithai-googlecloud-gcp-activity-7308113778477346816-Yfhh" target="_blank" style="color:#fff; text-decoration: underline;">View Post</a>
+    <!-- Main -->
+    <div id="main">
+      <section class="post">
+        <header class="major">
+          <h2>In My Queue</h2>
+        </header>
+        <div class="box">
+          <ul>
+            <li>LangChain for Developers</li>
+            <li>LLMOps Specialization</li>
+            <li>Advanced Prompt Engineering</li>
+            <li>Python for GenAI Applications</li>
+          </ul>
+        </div>
+
+        <h2>Blog Posts / Articles</h2>
+        <div class="box">
+          <ul>
+            <li><a href="#">How I Built FitFusion AI in 5 Hours</a> – LinkedIn</li>
+          </ul>
+        </div>
+
+        <h2>LinkedIn Pulse</h2>
+        <div class="box">
+          <div class="row gtr-50 gtr-uniform">
+            <div class="col-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images_events/1.jpg" alt="Google AI Event" style="width:100%; height:100%; object-fit: cover;" />
+                  </div>
+                  <div class="flip-card-back">
+                    <p><strong>Google Build With AI NYC</strong><br>
+                      Explored multi-agent systems, Vertex AI apps, and built an AI teaching assistant alongside Googlers.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/kriti-c-parikh_buildwithai-googlecloud-gcp-activity-7308113778477346816-Yfhh" target="_blank" style="color:#fff;">View Post</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="images_events/2.jpg" alt="Snowflake Meetup" style="width:100%; height:100%; object-fit: cover;" />
-                </div>
-                <div class="flip-card-back">
-                  <p><strong>Snowflake Meetup</strong><br>
-                    Dived into the modern data stack, AI-ready pipelines, and cloud-scale architecture discussions.
-                  </p>
-                  <a href="https://www.linkedin.com/posts/kriti-c-parikh_ai-datacloud-snowflake-activity-7305440697069772801-CXVJ" target="_blank" style="color:#fff; text-decoration: underline;">View Post</a>
+            <div class="col-6">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images_events/2.jpg" alt="Snowflake Meetup" style="width:100%; height:100%; object-fit: cover;" />
+                  </div>
+                  <div class="flip-card-back">
+                    <p><strong>Snowflake Meetup</strong><br>
+                      Dived into the modern data stack, AI-ready pipelines, and cloud-scale architecture discussions.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/kriti-c-parikh_ai-datacloud-snowflake-activity-7305440697069772801-CXVJ" target="_blank" style="color:#fff;">View Post</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <h2>Whiteboard Brainstorms</h2>
-      <div class="box">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-emKBQIxi8T71XY9vQaYFSZjH6iFwihS4XvprSUP5fiKWrA/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0" style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); background: #f9f9f9;">Loading…</iframe>
-      </div>
+        <h2>Whiteboard Brainstorms</h2>
+        <div class="box">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-emKBQIxi8T71XY9vQaYFSZjH6iFwihS4XvprSUP5fiKWrA/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
 
-      <h2>Momentum Meter</h2>
-      <div class="box">
-        <blockquote>
-          “Stay curious, keep building, and don’t wait for perfect — ship it, shape it, sharpen it.”
-        </blockquote>
-        <p><strong>Fueling me lately:</strong> GenAI x mental health ideas, Hugging Face collabs, and micro-hackathons ⚡</p>
-      </div>
+        <h2>Momentum Meter</h2>
+        <div class="box">
+          <blockquote>“Stay curious, keep building, and don’t wait for perfect — ship it, shape it, sharpen it.”</blockquote>
+          <p><strong>Fueling me lately:</strong> GenAI x mental health ideas, Hugging Face collabs, and micro-hackathons ⚡</p>
+        </div>
+      </section>
+    </div>
 
-    </section>
+    <!-- Back to Top -->
+    <ul class="actions">
+      <li><a href="#nav" class="button icon solid solo fa-arrow-up scrolly">Go up</a></li>
+    </ul>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section>
+        <h2>Let's Connect and Collaborate</h2>
+      </section>
+      <section class="split contact">
+        <section class="alt">
+          <h3>Address</h3>
+          <p>New York City, New York</p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:kriticparikh@gmail.com">kriticparikh@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+            <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/KritiCParikh" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="https://discordapp.com/users/kcparikh" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
   </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <section>
-      <h2>Let's Connect and Collaborate</h2>
-    </section>
-    <section class="split contact">
-      <section class="alt">
-        <h3>Address</h3>
-        <p>New York City, New York</p>
-      </section>
-      <section>
-        <h3>Email</h3>
-        <p><a href="mailto:kriticparikh@gmail.com">kriticparikh@gmail.com</a></p>
-      </section>
-      <section>
-        <h3>Social</h3>
-        <ul class="icons alt">
-          <li><a href="https://www.linkedin.com/in/kriti-c-parikh/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-          <li><a href="https://github.com/KritiCParikh" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-          <li><a href="https://discordapp.com/users/kcparikh" class="icon brands alt fa-discord"><span class="label">Discord</span></a></li>
-        </ul>
-      </section>
-    </section>
-  </footer>
-</div>
-
-<!-- Back to Top Button -->
-
-                            <ul class="actions">
-								<li><a href="#nav" class="button icon solid solo fa-arrow-up scrolly">Go up</a></li>
-							</ul>
-
-<!-- Flip Animation Enhancements -->
-<style>
-.flip-card-inner {
-  transition: transform 0.6s, box-shadow 0.3s;
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg) scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-.flip-card-front img {
-  animation: fadeIn 0.8s ease-in-out forwards;
-  opacity: 0;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-</style>
-
-      <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
