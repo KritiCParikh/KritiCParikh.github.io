@@ -7,6 +7,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    .flip-card {
+      background-color: transparent;
+      width: 100%;
+      height: 200px;
+      perspective: 1000px;
+    }
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ddd;
+      padding: 1rem;
+    }
+    .flip-card-front {
+      background-color: #f7f7f7;
+      color: black;
+    }
+    .flip-card-back {
+      background-color: #333;
+      color: white;
+      transform: rotateY(180deg);
+    }
+  </style>
 </head>
 <body class="is-preload">
   <div id="wrapper">
@@ -54,28 +90,35 @@
         <h2>LinkedIn Pulse</h2>
         <div class="box">
           <div class="row gtr-50 gtr-uniform">
+            <!-- Google Build With AI Event -->
             <div class="col-6">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <strong>Google Build With AI Event</strong>
+                    <img src="images_events/1.jpg" alt="Google AI Event" style="width:100%; height:100%; object-fit: cover;" />
                   </div>
                   <div class="flip-card-back">
-                    Explored multi-agent systems, Vertex AI apps, and built an AI teaching assistant alongside Googlers.  
-                    <a href="https://www.linkedin.com/posts/kriti-c-parikh_buildwithai-googlecloud-gcp-activity-7308113778477346816-Yfhh" target="_blank">View Post</a>
+                    <p><strong>Google Build With AI NYC</strong><br>
+                      Explored multi-agent systems, Vertex AI apps, and built an AI teaching assistant alongside Googlers.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/kriti-c-parikh_buildwithai-googlecloud-gcp-activity-7308113778477346816-Yfhh" target="_blank" style="color:#fff; text-decoration: underline;">View Post</a>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Snowflake Meetup -->
             <div class="col-6">
               <div class="flip-card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <strong>Snowflake Meetup</strong>
+                    <img src="images_events/2.jpg" alt="Snowflake Meetup" style="width:100%; height:100%; object-fit: cover;" />
                   </div>
                   <div class="flip-card-back">
-                    Attended a Snowflake session focused on modern data stacks, data cloud architecture, and AI-ready pipelines.  
-                    <a href="https://www.linkedin.com/posts/kriti-c-parikh_ai-datacloud-snowflake-activity-7305440697069772801-CXVJ" target="_blank">View Post</a>
+                    <p><strong>Snowflake Meetup</strong><br>
+                      Dived into the modern data stack, AI-ready pipelines, and cloud-scale architecture discussions.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/kriti-c-parikh_ai-datacloud-snowflake-activity-7305440697069772801-CXVJ" target="_blank" style="color:#fff; text-decoration: underline;">View Post</a>
                   </div>
                 </div>
               </div>
@@ -84,22 +127,21 @@
         </div>
 
         <h2>Whiteboard Brainstorms</h2>
-        <p style="margin-top: -1rem;">Have a half-baked idea or a creative spark? Drop it here like a sticky note on my digital wall 🧠✨</p>
+        <p style="margin-top: -1rem;">Have a half-baked idea or a creative spark? Please drop it here like a sticky note on my digital wall and I'd be glad to hear it.</p>
         <div class="box">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-emKBQIxi8T71XY9vQaYFSZjH6iFwihS4XvprSUP5fiKWrA/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0" style="border: 2px solid #ccc; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); background: #f9f9f9;">Loading…</iframe>
           <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
-            💬 Got feedback for me or this page? I’d love to hear it — drop it in the form above!
+            Also, got a feedback for me or this page? Glad to hear it, please drop it in the form above!
           </p>
         </div>
 
         <h2>Momentum Meter</h2>
         <div class="box">
           <blockquote>
-            “Stay curious, keep building, and don’t wait for perfect — ship it, shape it, sharpen it.”
+            “Stay curious, keep building, and don’t wait for perfect; ship it, shape it, sharpen it.”
           </blockquote>
           <p><strong>Fueling me lately:</strong> GenAI x mental health ideas, Hugging Face collabs, and micro-hackathons ⚡</p>
         </div>
-
       </section>
     </div>
   </div>
