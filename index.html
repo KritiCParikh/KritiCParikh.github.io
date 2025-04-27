@@ -15,6 +15,50 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
+				<div>
+				<!--  Dynamic Tagline with Typing Effect -->
+				<div style="text-align: center; margin-top: 30px; font-size: 26px; font-weight: bold; color: white;">
+					Shaping the Future, One <span id="typed-word" style="color: #FFA500; border-right: 2px solid #FFA500; padding-left: 5px;"></span> at a Time.
+				</div>
+				
+				<script>
+				const words = ["Model", "Insight", "Application", "System", "Agent", "Connection", "Opportunity"];
+				let letterIndex = 0;
+				let wordIndex = 0;
+				let currentWord = '';
+				let isDeleting = false;
+				const typingSpeed = 150; // Typing speed in ms
+				const erasingSpeed = 100; // Deleting speed in ms
+				const pauseDelay = 1200; // Pause after full word
+				
+				function type() {
+					const display = document.getElementById('typed-word');
+					if (wordIndex >= words.length) wordIndex = 0;
+					currentWord = words[wordIndex];
+				
+					if (!isDeleting) {
+					display.innerHTML = currentWord.substring(0, letterIndex + 1);
+					letterIndex++;
+					if (letterIndex === currentWord.length) {
+						isDeleting = true;
+						setTimeout(type, pauseDelay);
+						return;
+					}
+					} else {
+					display.innerHTML = currentWord.substring(0, letterIndex - 1);
+					letterIndex--;
+					if (letterIndex === 0) {
+						isDeleting = false;
+						wordIndex++;
+					}
+					}
+					setTimeout(type, isDeleting ? erasingSpeed : typingSpeed);
+				}
+				
+				document.addEventListener("DOMContentLoaded", type);
+				</script>
+				</div>
+
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Kriti C Parikh</h1>
